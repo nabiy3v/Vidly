@@ -6,3 +6,5 @@ export const pageBtns: NodeListOf<HTMLButtonElement> = document.querySelectorAll
 export const movies: NodeListOf<HTMLElement> = document.querySelectorAll('.movie')!;
 export const movies2: NodeListOf<HTMLElement> = document.querySelectorAll('.movie2')!;
 export const movies3: NodeListOf<HTMLElement> = document.querySelectorAll('.movie3')!;
+export const movieBtn: HTMLButtonElement = document.querySelector('.movieBtn')!;
+export const tableElm: HTMLButtonElement = document.querySelector('.tableElm')!;

@@ -1,0 +1,88 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="WIDTH=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/dist/index.css" />
+    <title>Pattern Memory</title>
+    <script
+      src="https://kit.fontawesome.com/9bad537598.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body class="grid h-screen place-items-center">
+    <div class="w-[900px] rounded-lg p-6">
+      <div class="flex">
+        <div class="w-1/4">
+          <ul class="rounded-lg border">
+            <li class="genres cursor-pointer border-b p-3 hover:bg-gray-200">AllGenres</li>
+            <li class="genres cursor-pointer border-b p-3 hover:bg-gray-200">Action</li>
+            <li class="genres cursor-pointer border-b p-3 hover:bg-gray-200">Comedy</li>
+            <li class="genres cursor-pointer p-3 hover:bg-gray-200">Thriller</li>
+          </ul>
+        </div>
+
+        <div class="w-3/4 pl-6">
+          <button class="mb-3 rounded bg-blue-500 px-4 py-2 text-white">New Movie</button>
+          <p class="mb-3 text-gray-700">Showing 9 movies in the database.</p>
+
+          <input type="text" placeholder="Search..." class="mb-4 w-full rounded border px-3 py-2" />
+
+          <table class="w-full border-collapse border">
+            <thead>
+              <tr class="bg-gray-200">
+                <th class="p-3 text-left">Title ⬆</th>
+                <th class="p-3 text-left">Genre</th>
+                <th class="p-3 text-left">Stock</th>
+                <th class="p-3 text-left">Rate</th>
+                <th class="p-3 text-left"><i class="fa-solid fa-heart text-red-700"></i></th>
+                <th class="p-3 text-left"></th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr class="border-b">
+                <td class="cursor-pointer p-3 text-blue-500">Airplane</td>
+                <td class="p-3 genre">Comedy</td>
+                <td class="p-3">7</td>
+                <td class="p-3">3.5</td>
+                <td class="cursor-pointer p-3"><i class="fa-regular fa-heart"></i></td>
+                <td class="p-3"><button class="rounded bg-red-500 px-3 py-1 text-white">Delete</button></td>
+              </tr>
+              <tr class="border-b">
+                <td class="cursor-pointer p-3 text-blue-500">Die Hard</td>
+                <td class="p-3 genre">Action</td>
+                <td class="p-3">5</td>
+                <td class="p-3">2.5</td>
+                <td class="cursor-pointer p-3"><i class="fa-regular fa-heart"></i></td>
+                <td class="p-3"><button class="rounded bg-red-500 px-3 py-1 text-white">Delete</button></td>
+              </tr>
+              <tr class="border-b">
+                <td class="cursor-pointer p-3 text-blue-500">Get Out</td>
+                <td class="p-3 genre">Thriller</td>
+                <td class="p-3">8</td>
+                <td class="p-3">3.5</td>
+                <td class="cursor-pointer p-3"><i class="fa-regular fa-heart"></i></td>
+                <td class="p-3"><button class="rounded bg-red-500 px-3 py-1 text-white">Delete</button></td>
+              </tr>
+              <tr>
+                <td class="cursor-pointer p-3 text-blue-500">Gone Girl</td>
+                <td class="p-3 genre">Thriller</td>
+                <td class="p-3">7</td>
+                <td class="p-3">4.5</td>
+                <td class="cursor-pointer p-3"><i class="fa-regular fa-heart"></i></td>
+                <td class="p-3"><button class="rounded bg-red-500 px-3 py-1 text-white">Delete</button></td>
+              </tr>
+            </tbody>
+          </table>
+
+          <div class="mt-4 flex space-x-2">
+            <button class="rounded bg-blue-500 px-3 py-1 text-white">1</button>
+            <button class="rounded bg-gray-300 px-3 py-1 text-gray-700">2</button>
+            <button class="rounded bg-gray-300 px-3 py-1 text-gray-700">3</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+  <script src="/dist/index.js" type="module"></script>
+</html>

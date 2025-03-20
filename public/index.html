@@ -21,7 +21,7 @@
 
     <div
       id="login-hidden"
-      class="flex flex-col items-center pt-20 min-h-screen"
+      class="flex flex-col items-center pt-20"
     >
       <div class="w-1/2">
         <h2 class="text-3xl font-bold mb-4">Login</h2>
@@ -95,7 +95,129 @@
         <p id="logOut" class="text-blue-600 hover:hover:text-blue-800">Log Out</p>
       </div>
 
-     
+      <div class="movieElm w-[900px] rounded-lg p-6 hidden mx-auto mt-14">
+        <div class="flex">
+          <div class="w-1/4">
+            <ul class="rounded-lg border">
+              <li class="sortGenres cursor-pointer border-b p-3 hover:bg-gray-200">All Genres</li>
+              <li class="sortGenres cursor-pointer border-b p-3 hover:bg-gray-200">Action</li>
+              <li class="sortGenres cursor-pointer border-b p-3 hover:bg-gray-200">Comedy</li>
+              <li class="sortGenres cursor-pointer p-3 hover:bg-gray-200">Thriller</li>
+            </ul>
+          </div>
+  
+          <div class="w-3/4 pl-6">
+            <button class="mb-3 rounded bg-blue-500 px-4 py-2 text-white movieBtn">New Movie</button>
+            <p class="mb-3 text-gray-700">Showing 9 movies in the database.</p>
+
+            <input type="text" class="searchInp" placeholder="Search...">
+
+            <table class="tableElm w-full border-collapse border">
+              <thead>
+                <tr class="bg-gray-200">
+                  <th class="p-3 text-left">Title</th>
+                  <th class="p-3 text-left">Genre</th>
+                  <th class="p-3 text-left">Stock</th>
+                  <th class="p-3 text-left">Rate</th>
+                  <th class="p-3 text-left"><i class="fa-solid fa-heart text-red-700"></i></th>
+                  <th class="p-3 text-left"></th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr class="movie border-b">
+                  <td class="cursor-pointer p-3 text-blue-500">Airplane</td>
+                  <td class="p-3 genre">Comedy</td>
+                  <td class="p-3">7</td>
+                  <td class="p-3">3.5</td>
+                  <td class="cursor-pointer p-3"><i class="fa-solid fa-heart heart text-gray-400"></i></td>
+                  <td class="p-3"><button class="rounded bg-red-500 px-3 py-1 text-white delete">Delete</button></td>
+                </tr>
+                <tr class="movie border-b">
+                  <td class="cursor-pointer p-3 text-blue-500">Die Hard</td>
+                  <td class="p-3 genre">Action</td>
+                  <td class="p-3">5</td>
+                  <td class="p-3">2.5</td>
+                  <td class="cursor-pointer p-3"><i class="fa-solid fa-heart heart text-gray-400"></i></td>
+                  <td class="p-3"><button class="rounded bg-red-500 px-3 py-1 text-white delete">Delete</button></td>
+                </tr>
+                <tr class="movie border-b">
+                  <td class="cursor-pointer p-3 text-blue-500">Get Out</td>
+                  <td class="p-3 genre">Thriller</td>
+                  <td class="p-3">8</td>
+                  <td class="p-3">3.5</td>
+                  <td class="cursor-pointer p-3"><i class="fa-solid fa-heart heart text-gray-400"></i></td>
+                  <td class="p-3"><button class="rounded bg-red-500 px-3 py-1 text-white delete">Delete</button></td>
+                </tr>
+                <tr class="movie">
+                  <td class="cursor-pointer p-3 text-blue-500">Gone Girl</td>
+                  <td class="p-3 genre">Thriller</td>
+                  <td class="p-3">7</td>
+                  <td class="p-3">4.5</td>
+                  <td class="cursor-pointer p-3"><i class="fa-solid fa-heart heart text-gray-400"></i></td>
+                  <td class="p-3"><button class="rounded bg-red-500 px-3 py-1 text-white delete">Delete</button></td>
+                </tr>
+  
+                <tr class="movie2 border-b hidden">
+                  <td class="cursor-pointer p-3 text-blue-500">Forsaj</td>
+                  <td class="p-3 genre">Comedy</td>
+                  <td class="p-3">7</td>
+                  <td class="p-3">3.5</td>
+                  <td class="cursor-pointer p-3"><i class="fa-solid fa-heart heart text-gray-400"></i></td>
+                  <td class="p-3"><button class="rounded bg-red-500 px-3 py-1 text-white delete">Delete</button></td>
+                </tr>
+                <tr class="movie2 border-b hidden">
+                  <td class="cursor-pointer p-3 text-blue-500">Zoopark</td>
+                  <td class="p-3 genre">Action</td>
+                  <td class="p-3">5</td>
+                  <td class="p-3">2.5</td>
+                  <td class="cursor-pointer p-3"><i class="fa-solid fa-heart heart text-gray-400"></i></td>
+                  <td class="p-3"><button class="rounded bg-red-500 px-3 py-1 text-white delete">Delete</button></td>
+                </tr>
+                <tr class="movie2 border-b hidden">
+                  <td class="cursor-pointer p-3 text-blue-500">Blood</td>
+                  <td class="p-3 genre">Action</td>
+                  <td class="p-3">4</td>
+                  <td class="p-3">2.5</td>
+                  <td class="cursor-pointer p-3"><i class="fa-solid fa-heart heart text-gray-400"></i></td>
+                  <td class="p-3"><button class="rounded bg-red-500 px-3 py-1 text-white delete">Delete</button></td>
+                </tr>
+                <tr class="movie2 hidden">
+                  <td class="cursor-pointer p-3 text-blue-500">Escape movie</td>
+                  <td class="p-3 genre">Thriller</td>
+                  <td class="p-3">9</td>
+                  <td class="p-3">9.3</td>
+                  <td class="cursor-pointer p-3"><i class="fa-solid fa-heart heart text-gray-400"></i></td>
+                  <td class="p-3"><button class="rounded bg-red-500 px-3 py-1 text-white delete">Delete</button></td>
+                </tr>
+  
+                <tr class="movie3 border-b hidden">
+                  <td class="cursor-pointer p-3 text-blue-500">The door</td>
+                  <td class="p-3 genre">Action</td>
+                  <td class="p-3">5</td>
+                  <td class="p-3">6.8</td>
+                  <td class="cursor-pointer p-3"><i class="fa-solid fa-heart heart text-gray-400"></i></td>
+                  <td class="p-3"><button class="rounded bg-red-500 px-3 py-1 text-white delete">Delete</button></td>
+                </tr>
+                <tr class="movie3 hidden">
+                  <td class="cursor-pointer p-3 text-blue-500">Cars</td>
+                  <td class="p-3 genre">Thriller</td>
+                  <td class="p-3">4</td>
+                  <td class="p-3">5.3</td>
+                  <td class="cursor-pointer p-3"><i class="fa-solid fa-heart heart text-gray-400"></i></td>
+                  <td class="p-3"><button class="rounded bg-red-500 px-3 py-1 text-white delete">Delete</button></td>
+                </tr>
+                
+              </tbody>
+            </table>
+  
+            <div class="mt-4 flex space-x-2">
+              <button class="page-btn rounded bg-blue-500 px-3 py-1 text-white" data-page="1">1</button>
+              <button class="page-btn rounded bg-blue-500 px-3 py-1 text-white" data-page="2">2</button>
+              <button class="page-btn rounded bg-blue-500 px-3 py-1 text-white" data-page="3">3</button>
+          </div>
+          </div>
+        </div>
+      </div>
     
   </body>
   <script src="../dist/index.js"></script>

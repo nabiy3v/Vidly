@@ -88,7 +88,7 @@ function renderMovie() {
   let currentPage = 1;
 
   function updateMovies() {
-    if (searchMode) return
+    if (searchMode) return;
 
     const freshMovies3 = document.querySelectorAll(".movie3");
     let allMovies = [
@@ -189,7 +189,7 @@ function renderMovie() {
     let save = div.querySelector(".save") as HTMLButtonElement;
 
     save.addEventListener("click", (event) => {
-        event.preventDefault();
+      event.preventDefault();
 
       let title = titleInput.value;
       let genre = genreSelect.value;
@@ -208,7 +208,6 @@ function renderMovie() {
                     <td class="cursor-pointer p-3"><i class="fa-solid fa-heart heart text-gray-400"></i></td>
                     <td class="p-3"><button class="rounded bg-red-500 px-3 py-1 text-white delete">Delete</button></td>`;
 
-      
       tableElm.appendChild(tr);
       Array.from(movies3).push(tr);
       updateMovies();
